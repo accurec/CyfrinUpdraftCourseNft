@@ -1,7 +1,7 @@
 ## About
 
 This is just a not very polished project to explore how to create and store NFTs using Openzeppelin library, IPFS and SVG data.
-In `SelectorDirectCalls.sol` file there is some exploration on how to call functions with data directly on smart contracts.
+In `SelectorDirectCalls.sol` file there is some exploration on how to call functions with data directly on smart contracts. Also exploring a bit of `cast sig` command to verify Metamask calls.
 
 ## Useful links
 
