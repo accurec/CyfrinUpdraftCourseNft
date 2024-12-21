@@ -8,3 +8,5 @@ In `SelectorDirectCalls.sol` file there is some exploration on how to call funct
 1) [NFT Storage](https://nft.storage/)
 2) [Openzeppelin contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
 3) [IPFS](https://ipfs.tech/)
+4) [ETH signature database](https://www.4byte.directory/)
+5) [Openchain signature database](https://openchain.xyz/signatures)
