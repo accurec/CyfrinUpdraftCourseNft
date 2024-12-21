@@ -22,17 +22,15 @@ contract SelectorDirectCalls {
     }
 
     function callTransferWithBinary(address someAddress, uint256 amount) public returns (bytes4, bool) {
-        (bool success, bytes memory returnData) = address(this).call(
-            abi.encodeWithSelector(getSelectorOne(), someAddress, amount)
-        );
+        (bool success, bytes memory returnData) =
+            address(this).call(abi.encodeWithSelector(getSelectorOne(), someAddress, amount));
 
         return (bytes4(returnData), success);
     }
 
     function callTransferWithBinaryTwo(address someAddress, uint256 amount) public returns (bytes4, bool) {
-        (bool success, bytes memory returnData) = address(this).call(
-            abi.encodeWithSignature("transfer(address,uint256)", someAddress, amount)
-        );
+        (bool success, bytes memory returnData) =
+            address(this).call(abi.encodeWithSignature("transfer(address,uint256)", someAddress, amount));
 
         return (bytes4(returnData), success);
     }
